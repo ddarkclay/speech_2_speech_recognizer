@@ -15,5 +15,5 @@ with sr.Microphone() as source:
         my_audio.save('my_audio.mp3')
         playsound('my_audio.mp3')
 
-    except:
-        print('Not Recognize your voice .')
+    except Exception as e:
+        print('Not Recognize your voice becauze : .', e)
